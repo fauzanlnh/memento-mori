@@ -1,0 +1,856 @@
+{
+	"info": {
+		"_postman_id": "79f7d7ad-d3c8-457b-9283-e2bed02baedd",
+		"name": "Fauzan Lukmanul Hakim",
+		"description": "API Documentaion Village",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12835431"
+	},
+	"item": [
+		{
+			"name": "Desa",
+			"item": [
+				{
+					"name": "getAllVilage",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/desa",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"desa"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/desa",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"desa"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Feb 2024 11:59:16 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Feb 2024 11:59:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Data successfully retrieved.\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"code\": \"1101012001\",\n            \"name\": \"KEUDE BAKONGAN\",\n            \"meta\": \"{\\\"lat\\\":\\\"2.9300043\\\",\\\"long\\\":\\\"97.4732991\\\",\\\"pos\\\":\\\"23773\\\"}\",\n            \"district_code\": \"110101\"\n        },\n        {\n            \"id\": 2,\n            \"code\": \"1101012002\",\n            \"name\": \"UJONG MANGKI\",\n            \"meta\": \"{\\\"lat\\\":\\\"NULL\\\",\\\"long\\\":\\\"NULL\\\",\\\"pos\\\":\\\"23773\\\"}\",\n            \"district_code\": \"110101\"\n        },\n        {\n            \"id\": 3,\n            \"code\": \"1101012003\",\n            \"name\": \"UJONG PADANG\",\n            \"meta\": \"{\\\"lat\\\":\\\"4.0780078\\\",\\\"long\\\":\\\"96.3093164\\\",\\\"pos\\\":\\\"23772\\\"}\",\n            \"district_code\": \"110101\"\n        },\n        {\n            \"id\": 4,\n            \"code\": \"1101012004\",\n            \"name\": \"GAMPONG DRIEN\",\n            \"meta\": \"{\\\"lat\\\":\\\"NULL\\\",\\\"long\\\":\\\"NULL\\\",\\\"pos\\\":\\\"NULL\\\"}\",\n            \"district_code\": \"110101\"\n        },\n        {\n            \"id\": 5,\n            \"code\": \"1101012015\",\n            \"name\": \"DARUL IKHSAN\",\n            \"meta\": \"{\\\"lat\\\":\\\"NULL\\\",\\\"long\\\":\\\"NULL\\\",\\\"pos\\\":\\\"NULL\\\"}\",\n            \"district_code\": \"110101\"\n        },\n        {\n            \"id\": 6,\n            \"code\": \"1101012016\",\n            \"name\": \"PADANG BEURAHAN\",\n            \"meta\": \"{\\\"lat\\\":\\\"3.2550178\\\",\\\"long\\\":\\\"97.1793628\\\",\\\"pos\\\":\\\"24395\\\"}\",\n            \"district_code\": \"110101\"\n        },\n        {\n            \"id\": 7,\n            \"code\": \"1101012017\",\n            \"name\": \"GAMPONG BARO\",\n            \"meta\": \"{\\\"lat\\\":\\\"4.9608389\\\",\\\"long\\\":\\\"97.7674773\\\",\\\"pos\\\":\\\"23777\\\"}\",\n            \"district_code\": \"110101\"\n        },\n        {\n            \"id\": 8,\n            \"code\": \"1101022001\",\n            \"name\": \"FAJAR HARAPAN\",\n            \"meta\": \"{\\\"lat\\\":\\\"3.1297375\\\",\\\"long\\\":\\\"97.3165547\\\",\\\"pos\\\":\\\"23771\\\"}\",\n            \"district_code\": \"110102\"\n        },\n        {\n            \"id\": 9,\n            \"code\": \"1101022002\",\n            \"name\": \"KRUENG BATEE\",\n            \"meta\": \"{\\\"lat\\\":\\\"2.9339321\\\",\\\"long\\\":\\\"97.624978\\\",\\\"pos\\\":\\\"23771\\\"}\",\n            \"district_code\": \"110102\"\n        },\n        {\n            \"id\": 10,\n            \"code\": \"1101022003\",\n            \"name\": \"PASI KUALA ASAHAN\",\n            \"meta\": \"{\\\"lat\\\":\\\"3.1198584\\\",\\\"long\\\":\\\"97.3057581\\\",\\\"pos\\\":\\\"23771\\\"}\",\n            \"district_code\": \"110102\"\n        }\n    ],\n    \"links\": {\n        \"first\": \"http://127.0.0.1:8000/api/desa?page=1\",\n        \"last\": \"http://127.0.0.1:8000/api/desa?page=8381\",\n        \"prev\": null,\n        \"next\": \"http://127.0.0.1:8000/api/desa?page=2\"\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 8381,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/desa?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/desa?page=2\",\n                \"label\": \"2\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/desa?page=3\",\n                \"label\": \"3\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/desa?page=4\",\n                \"label\": \"4\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/desa?page=5\",\n                \"label\": \"5\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/desa?page=6\",\n                \"label\": \"6\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/desa?page=7\",\n                \"label\": \"7\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/desa?page=8\",\n                \"label\": \"8\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/desa?page=9\",\n                \"label\": \"9\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/desa?page=10\",\n                \"label\": \"10\",\n                \"active\": false\n            },\n            {\n                \"url\": null,\n                \"label\": \"...\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/desa?page=8380\",\n                \"label\": \"8380\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/desa?page=8381\",\n                \"label\": \"8381\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/desa?page=2\",\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://127.0.0.1:8000/api/desa\",\n        \"per_page\": 10,\n        \"to\": 10,\n        \"total\": 83809\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "getVillageById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/desa/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"desa",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/desa/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"desa",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Feb 2024 12:41:01 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Feb 2024 12:41:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Data Retrieved\",\n    \"data\": {\n        \"id\": 1,\n        \"code\": \"1101012001\",\n        \"name\": \"KEUDE BAKONGAN\",\n        \"meta\": \"{\\\"lat\\\":\\\"2.9300043\\\",\\\"long\\\":\\\"97.4732991\\\",\\\"pos\\\":\\\"23773\\\"}\",\n        \"district_code\": \"110101\"\n    }\n}"
+						},
+						{
+							"name": "404 - Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/desa/0",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"desa",
+										"0"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Feb 2024 12:14:45 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Feb 2024 12:14:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"message\": [\n            \"village with 0 not found\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "createVillage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": 1234567890,\r\n    \"name\": \"tes\",\r\n    \"district_code\": 1234567,\r\n    \"meta\": \"{\\\"lat\\\":\\\"2.9300043\\\",\\\"long\\\":\\\"97.4732991\\\",\\\"pos\\\":\\\"23773\\\"}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/desa",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"desa"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "201 - Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"code\": 1234567890,\r\n    \"name\": \"tes\",\r\n    \"district_code\": 1234567,\r\n    \"meta\": \"{\\\"lat\\\":\\\"2.9300043\\\",\\\"long\\\":\\\"97.4732991\\\",\\\"pos\\\":\\\"23773\\\"}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/desa",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"desa"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Feb 2024 12:58:11 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Feb 2024 12:58:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Data Created\",\n    \"data\": {\n        \"id\": 83814,\n        \"code\": 1234567890,\n        \"name\": \"tes\",\n        \"meta\": \"{\\\"lat\\\":\\\"2.9300043\\\",\\\"long\\\":\\\"97.4732991\\\",\\\"pos\\\":\\\"23773\\\"}\",\n        \"district_code\": 1234567\n    }\n}"
+						},
+						{
+							"name": "400 - Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"code\": 1234567890,\r\n    \"name\": \"\",\r\n    \"district_code\": 12345678,\r\n    \"meta\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/desa",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"desa"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Feb 2024 12:58:43 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Feb 2024 12:58:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"code\": [\n            \"The code has already been taken.\"\n        ],\n        \"district_code\": [\n            \"The district code field must be between 1 and 7 digits.\"\n        ],\n        \"name\": [\n            \"The name field is required.\"\n        ],\n        \"meta\": [\n            \"The meta field is required.\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "updateVillage",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"0987654322\",\r\n    \"name\": \"tes baruu\",\r\n    \"district_code\": 7654321,\r\n    \"meta\": \"{\\\"lat\\\":\\\"2.9300043\\\",\\\"long\\\":\\\"97.4732991\\\",\\\"pos\\\":\\\"23773\\\"}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/desa/0",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"desa",
+								"0"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - OK",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"code\": \"0987654321\",\r\n    \"name\": \"tes baru\",\r\n    \"district_code\": 7654321,\r\n    \"meta\": \"{\\\"lat\\\":\\\"2.9300043\\\",\\\"long\\\":\\\"97.4732991\\\",\\\"pos\\\":\\\"23773\\\"}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/desa/83814",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"desa",
+										"83814"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Feb 2024 13:30:37 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Feb 2024 13:30:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Data Updated\",\n    \"data\": {\n        \"id\": 83814,\n        \"code\": \"0987654321\",\n        \"name\": \"tes baru\",\n        \"meta\": \"{\\\"lat\\\":\\\"2.9300043\\\",\\\"long\\\":\\\"97.4732991\\\",\\\"pos\\\":\\\"23773\\\"}\",\n        \"district_code\": 7654321\n    }\n}"
+						},
+						{
+							"name": "400 - Bad Request",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"code\": \"09876543219201502009\",\r\n    \"name\": \"\",\r\n    \"district_code\": \"\",\r\n    \"meta\": \"{\\\"lat\\\":\\\"2.9300043\\\",\\\"long\\\":\\\"97.4732991\\\",\\\"pos\\\":\\\"23773\\\"}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/desa/83814",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"desa",
+										"83814"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Feb 2024 14:17:09 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Feb 2024 14:17:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"code\": [\n            \"The code field must be between 1 and 10 digits.\"\n        ],\n        \"district_code\": [\n            \"The district code field is required.\"\n        ],\n        \"name\": [\n            \"The name field is required.\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "404 - Not Found",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"code\": \"0987654322\",\r\n    \"name\": \"tes baruu\",\r\n    \"district_code\": 7654321,\r\n    \"meta\": \"{\\\"lat\\\":\\\"2.9300043\\\",\\\"long\\\":\\\"97.4732991\\\",\\\"pos\\\":\\\"23773\\\"}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/desa/0",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"desa",
+										"0"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Feb 2024 14:18:07 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Feb 2024 14:18:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"message\": [\n            \"village with 0 not found\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteVillage",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/desa/0",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"desa",
+								"0"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "404 - Not Found",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/desa/83814",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"desa",
+										"83814"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Feb 2024 14:19:44 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Feb 2024 14:19:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"message\": [\n            \"village with 0 not found\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "200 - OK",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/desa/83814",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"desa",
+										"83814"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Feb 2024 14:21:02 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Feb 2024 14:21:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Data deleted\",\n    \"data\": null\n}"
+						}
+					]
+				}
+			],
+			"description": "Example For CRUD desa\n\nhttp://base_url/api/desa/endpoint"
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": " http://127.0.0.1:8000"
+		}
+	]
+}
